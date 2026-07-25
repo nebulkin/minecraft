@@ -22,8 +22,8 @@ logging.basicConfig(level=logging.INFO)
 # ---------- Настройки (задаются в Environment Variables на Render) ----------
 
 BOT_TOKEN = os.getenv("BOT_TOKEN", "СЮДА_ТВОЙ_ТОКЕН")
-ADMIN_CHAT_ID = int(os.getenv("ADMIN_CHAT_ID", "0"))  # ID группы/чата админов
-DATABASE_URL = os.getenv("DATABASE_URL", "")  # строка подключения из Supabase
+ADMIN_CHAT_ID = int(os.getenv("ADMIN_CHAT_ID", "0"))
+DATABASE_URL = os.getenv("DATABASE_URL", "")
 
 # Render сам даёт адрес сервиса в переменной RENDER_EXTERNAL_URL
 WEBHOOK_PATH = "/webhook"
